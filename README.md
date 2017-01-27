@@ -8,7 +8,7 @@ The Second module takes in the array that was formed in the First Module and the
 #### Module 1 (Big_Power):
 The first chuck of code is to initialise an Array and a Carry variable. It then appends the NUMBER given to that array.  
 ```python
-# Declaring the Array and the Carry variable.
+	# Declaring the Array and the Carry variable.
 	theNumber = []
 	Carry = 0
 
@@ -20,7 +20,19 @@ The first chuck of code is to initialise an Array and a Carry variable. It then 
 * theNumber = [2]
 * Carry = 0  
 
-The next chunk of code contains 2 for loops. The first one loops based on the POWER variable. 
+The next chunk of code contains 2 for loops. The first one loops based on the POWER variable.  
+```python
+	# Loops based on the power given.
+	for i in range(POWER - 1):
+
+		# Loops based on how many elements there currently are in the array.
+		for j in range(len(theNumber)):
+```
+*So using hte NUMBER and POWER values above this is initially what the for loops would read:*  
+* for i in range(31):
+* 	for j in range(1):  
+
+The next chunk of code is 
 
 ### Theoretical Numbers
 Max output = [MAX ARRAY SIZE = 536,870,912] * [MAX NUM IN ARRAY = 9] = 4831838208 Digit Number.  
