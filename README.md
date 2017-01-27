@@ -3,6 +3,6 @@ A python module that takes in 2 paramaters (Number , Power) and prints out the r
 
 ## Theoretical Numbers
 
-Max output = 500,000,000,000,000,000 Digit Number.  
-Max Number that can be used = 316,227,766.  
+Max output = [MAX ARRAY SIZE = 536,870,912] * [MAX NUM IN ARRAY = 999999999] = 5.368709115×10¹⁷ Digit Number.
+Max Number that can be used = SquareRoot(999,999,999,999,999,999) = 1,000,000,000.
 Max Power = ?.
