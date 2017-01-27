@@ -10,8 +10,8 @@ Max Power = ?.
 **_I say Theoretical as i don't have the computer power to reach these numbers nor do i have an in depth knowledge of the real limits of python. But i'm very happy to get feedback and corrections on my equations!_**
 
 ### How it Works
-#### Module 1 (Big_Power):
 *Throughout i will be showing how the variables are affected based on NUMBER = 2 and POWER = 32. And these do not Change.*  
+#### Module 1 (Big_Power):
 The first chuck of code is to initialise an Array and a Carry variable. It then appends the NUMBER given to that array.  
 ```python
 # Declaring the Array and the Carry variable.
@@ -25,4 +25,5 @@ The first chuck of code is to initialise an Array and a Carry variable. It then 
 *After this chuck of code this is how the variables would look:*  
 * theNumber = [2]
 * Carry = 0  
+
 The next chunk of code contains 2 for loops. The first one loops based on the POWER variable. 
