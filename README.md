@@ -1,7 +1,9 @@
 # PowerCalculator
-A python module that takes in 2 paramaters (Number , Power) and prints out the result!
+A python program that has 2 modules 'Big_Power(x,y)' and 'Print_Power(z)'.  
+The first module takes in 2 integers x and y. x = Number that is going to be used. y = Power to use on x. It returns an Array of the Result.  
+The Second module takes in the array that was formed in the First Module and the prints it out into an acctual number.  
 
-## Theoretical Numbers
+### Theoretical Numbers
 
 Max output = [MAX ARRAY SIZE = 536,870,912] * [MAX NUM IN ARRAY = 9] = 4831838208 Digit Number.  
 Max Number that can be used = SquareRoot(999,999,999,999,999,999) = 1,000,000,000.  
