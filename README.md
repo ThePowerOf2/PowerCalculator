@@ -49,14 +49,9 @@ if (Carry != 0):
 	Carry = 0
 ```
 *After this chuck of code this is how the variables would look:*  
-* theNumber = [4]  
-(This has not changed as Carry = 0 but if the Carry was = 3 lets say. theNumber = [7])
+* theNumber = [4]
 * Carry = 0  
-
-
-
-
-
+(theNumber has not changed as Carry = 0 but if the Carry was = 3 lets say. theNumber = [7])
 
 ## Theoretical Numbers
 Max output = [MAX ARRAY SIZE = 536,870,912] * [MAX NUM IN ARRAY = 9] = 4831838208 Digit Number.  
