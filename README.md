@@ -49,7 +49,7 @@ if (Carry != 0):
 	Carry = 0
 ```
 *After this chuck of code this is how the variables would look:*  
-* theNumber = [4] (Not changed as Carry = 0 but if the Carry was = 3 lets say. theNumber = [7])
+* theNumber = [4](Not changed as Carry = 0 but if the Carry was = 3 lets say. theNumber = [7])
 * Carry = 0  
 
 
