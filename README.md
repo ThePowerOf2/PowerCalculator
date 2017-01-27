@@ -29,8 +29,8 @@ The next chunk of code contains 2 for loops. The first one loops based on the PO
 		for j in range(len(theNumber)):
 ```
 *So using hte NUMBER and POWER values above this is initially what the for loops would read:*  
-* for i in range(31):
-* 	for j in range(1):  
+* `for i in range(31):`
+* `for j in range(1):`  
 
 The next chunk of code is 
 
