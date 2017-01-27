@@ -21,4 +21,4 @@ while not Power: # If they enter anything other than an integer it will return '
 
 # Printing out the result to the user.
 print "Result = ",
-PowerCalculator.Power(Number,Power)
+PowerCalculator.Print_Power(PowerCalculator.Big_Power(Number,Power))
