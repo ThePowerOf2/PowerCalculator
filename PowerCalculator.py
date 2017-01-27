@@ -34,23 +34,26 @@ def Power(NUMBER,POWER):
 				Carry = 0
 
 	# Declaring reverse as the length of the final array.
-	reverse = len(theNumber)
+	reverse = len(theNumber) - 1
 	tmp = [0,0,0,0,0,0,0,0,0]
 
-	# Printing out each element of the array backwards to from the result.
-	for i in range(len(theNumber)):
+	# Printing out the Last array first to get rid of the leading zeros.
+	stdout.write(str(theNumber[reverse]))
+	reverse = reverse - 1
 
-		tmp[0] = (theNumber[reverse - 1] /100000000)
-		tmp[1] = ((theNumber[reverse - 1] - (tmp[0] * 100000000)) /10000000)
-		tmp[2] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000)) /1000000)
-		tmp[3] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000))/100000)
-		tmp[4] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000))/10000)
-		tmp[5] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000))/1000)
-		tmp[6] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000))/100)
-		tmp[7] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000) - (tmp[6] * 100))/10)
-		tmp[8] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000) - (tmp[6] * 100) - (tmp[7] * 10))/1)
 
-		# This is just a test.
+	# Printing out each element of the array backwards to form the result.
+	for i in range(len(theNumber) - 1):
+
+		tmp[0] = ((theNumber[reverse])/100000000)
+		tmp[1] = ((theNumber[reverse] - (tmp[0] * 100000000)) /10000000)
+		tmp[2] = ((theNumber[reverse] - (tmp[0] * 100000000) - (tmp[1] * 10000000)) /1000000)
+		tmp[3] = ((theNumber[reverse] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000))/100000)
+		tmp[4] = ((theNumber[reverse] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000))/10000)
+		tmp[5] = ((theNumber[reverse] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000))/1000)
+		tmp[6] = ((theNumber[reverse] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000))/100)
+		tmp[7] = ((theNumber[reverse] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000) - (tmp[6] * 100))/10)
+		tmp[8] = ((theNumber[reverse] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000) - (tmp[6] * 100) - (tmp[7] * 10))/1)
 
 		for j in range(9):
 			stdout.write(str(tmp[j]))
