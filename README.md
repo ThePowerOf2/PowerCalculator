@@ -9,13 +9,10 @@ Max Number that can be used = SquareRoot(999,999,999,999,999,999) = 1,000,000,00
 Max Power = ?.  
 **_I say Theoretical as i don't have the computer power to reach these numbers nor do i have an in depth knowledge of the real limits of python. But i'm very happy to get feedback and corrections on my equations!_**
 
-### How it Works 
+### How it Works
+#### Module 1 (Big_Power):
+*Throughout i will be showing how the variables are affected based on NUMBER = 2 and POWER = 32. And these do not Change.*  
 The first chuck of code is to initialise an Array and a Carry variable. It then appends the NUMBER given to that array.  
-*For example if NUMBER = 2 and POWER = 32. After this chuck of code this is how the variables would look:*  
-* NUMBER = 2
-* POWER = 32
-* theNumber = [2]
-* Carry = 0
 ```python
 # Declaring the Array and the Carry variable.
 	theNumber = []
@@ -25,3 +22,7 @@ The first chuck of code is to initialise an Array and a Carry variable. It then 
 	theNumber.append(0)
 	theNumber[0] = NUMBER
 ```
+*After this chuck of code this is how the variables would look:*  
+* theNumber = [2]
+* Carry = 0  
+The next chunk of code contains 2 for loops. The first one loops based on the POWER variable. 
