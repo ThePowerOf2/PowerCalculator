@@ -22,19 +22,42 @@ The first chuck of code is to initialise an Array and a Carry variable. It then 
 
 The next chunk of code contains 2 for loops. The first one loops based on the POWER variable.  
 ```python
-	# Loops based on the power given.
-	for i in range(POWER - 1):
+# Loops based on the power given.
+for i in range(POWER - 1):
 
-		# Loops based on how many elements there currently are in the array.
-		for j in range(len(theNumber)):
+	# Loops based on how many elements there currently are in the array.
+	for j in range(len(theNumber)):
 ```
 *So using hte NUMBER and POWER values above this is initially what the for loops would read:*  
 * `for i in range(31):`
 * `for j in range(1):`  
 
-The next chunk of code is 
+The next chunk of code multiplys the current part of the array(Based on the value of 'j' from the for loop) by NUMBER.
+```python
+# Multiplying the current number by the original number.
+	theNumber[j] = theNumber[j] * NUMBER
+```
+*After this chuck of code this is how the variables would look:*  
+* theNumber = [4]
+* Carry = 0  
 
-### Theoretical Numbers
+The next chunk of code checks whether there was a remainder (Carry) from the last calculation and then adds it onto the current part of the array.
+```python
+# Adding on the carry if there was any from the last calculation.
+if (Carry != 0):
+	theNumber[j] = theNumber[j] + Carry
+	Carry = 0
+```
+*After this chuck of code this is how the variables would look:*  
+* theNumber = [4] (Not changed as Carry = 0 but if the Carry was = 3 lets say. theNumber = [7])
+* Carry = 0  
+
+
+
+
+
+
+## Theoretical Numbers
 Max output = [MAX ARRAY SIZE = 536,870,912] * [MAX NUM IN ARRAY = 9] = 4831838208 Digit Number.  
 Max Number that can be used = SquareRoot(999,999,999,999,999,999) = 1,000,000,000.  
 Max Power = ?.  
