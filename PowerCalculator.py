@@ -15,8 +15,7 @@ def Power(NUMBER,POWER):
 		# Loops based on how many elements there currently are in the array.
 		for j in range(len(theNumber)):
 
-			# 
-			theNumber[j] = theNumber[j]
+			# Multiplying the current number by the original number.
 			theNumber[j] = theNumber[j] * NUMBER
 
 			# Adding on the carry if there was any from the last calculation.
@@ -34,16 +33,12 @@ def Power(NUMBER,POWER):
 				theNumber.append(Carry)
 				Carry = 0
 
-			theNumber[j] = theNumber[j]
-
 	# Declaring reverse as the length of the final array.
 	reverse = len(theNumber)
 	tmp = [0,0,0,0,0,0,0,0,0]
 
 	# Printing out each element of the array backwards to from the result.
 	for i in range(len(theNumber)):
-
-		theNumber[reverse - 1] = theNumber[reverse - 1]
 
 		tmp[0] = (theNumber[reverse - 1] /100000000)
 		tmp[1] = ((theNumber[reverse - 1] - (tmp[0] * 100000000)) /10000000)
@@ -54,6 +49,8 @@ def Power(NUMBER,POWER):
 		tmp[6] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000))/100)
 		tmp[7] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000) - (tmp[6] * 100))/10)
 		tmp[8] = ((theNumber[reverse - 1] - (tmp[0] * 100000000) - (tmp[1] * 10000000) - (tmp[2] * 1000000) - (tmp[3] * 100000) - (tmp[4] * 10000) - (tmp[5] * 1000) - (tmp[6] * 100) - (tmp[7] * 10))/1)
+
+		# This is just a test.
 
 		for j in range(9):
 			stdout.write(str(tmp[j]))
