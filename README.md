@@ -10,7 +10,12 @@ Max Power = ?.
 **_I say Theoretical as i don't have the computer power to reach these numbers nor do i have an in depth knowledge of the real limits of python. But i'm very happy to get feedback and corrections on my equations!_**
 
 ### How it Works 
-The first chuck of code is to initialise an Array and a Carry variable. It then appends the NUMBER given to that array.
+The first chuck of code is to initialise an Array and a Carry variable. It then appends the NUMBER given to that array.  
+*For example if NUMBER = 2 and POWER = 32. After this chuck of code this is how the variables would look:*  
+* NUMBER = 2
+* POWER = 32
+* theNumber = [2]
+* Carry = 0
 ```python
 # Declaring the Array and the Carry variable.
 	theNumber = []
