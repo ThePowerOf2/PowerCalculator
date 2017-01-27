@@ -1,6 +1,6 @@
 from sys import stdout
 
-def Power(NUMBER,POWER):
+def Big_Power(NUMBER,POWER):
 	# Declaring the Array and the Carry variable.
 	theNumber = []
 	Carry = 0
@@ -32,7 +32,10 @@ def Power(NUMBER,POWER):
 			if ((Carry != 0) and (j == (len(theNumber) - 1))):
 				theNumber.append(Carry)
 				Carry = 0
+	# Returning the Array.
+	return theNumber
 
+def Print_Power(theNumber):
 	# Declaring reverse as the length of the final array.
 	reverse = len(theNumber) - 1
 	tmp = [0,0,0,0,0,0,0,0,0]
@@ -40,7 +43,6 @@ def Power(NUMBER,POWER):
 	# Printing out the Last array first to get rid of the leading zeros.
 	stdout.write(str(theNumber[reverse]))
 	reverse = reverse - 1
-
 
 	# Printing out each element of the array backwards to form the result.
 	for i in range(len(theNumber) - 1):
