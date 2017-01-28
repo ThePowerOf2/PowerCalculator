@@ -61,3 +61,15 @@ def Print_Power(theNumber):
 			stdout.write(str(tmp[j]))
 		reverse = reverse - 1
 	stdout.write("\n")
+
+def Get_Digits(theNumber):
+
+	Result = 0
+
+	for i in range(9):
+		if(theNumber[len(theNumber) - 1] / (10 ** i) != 0):
+			Result = Result + 1
+			
+	Result = (9*(len(theNumber) - 1)) + Result
+
+	print Result
